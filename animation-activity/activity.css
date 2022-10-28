@@ -27,17 +27,24 @@ nav {
   opacity: 1;
 }
 
+
 @keyframes top {
   from {}
-  to {}
+  to {
+    transform-origin: top left;
+    transform: translate(1em, 0.5em) rotate(45deg);
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {opacity: 100%;}
+  to {opacity: 0;}
 }
 
 @keyframes bottom {
   from {}
-  to {}
+  to {
+    transform-origin: bottom left;
+    transform: translate(1em, -0.5em) rotate(-45deg);
+  }
 }
